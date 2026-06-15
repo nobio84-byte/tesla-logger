@@ -11,7 +11,7 @@ jobs:
           distribution: temurin
           java-version: "17"
       - name: Build
-        run: bash build_app.sh
+        run: bash build_app-2.sh
       - uses: actions/upload-artifact@v4
         with:
           name: drivelog-apk
