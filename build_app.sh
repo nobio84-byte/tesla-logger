@@ -391,7 +391,7 @@ class LoggerService : Service() {
           else if (!c && driving) stopDrive()
         } catch (e: Exception) {}
         var n = 0
-        while (alive && n < 30) { try { Thread.sleep(1000) } catch (e: Exception) { break }; n++ }
+        while (alive && n < 20) { try { Thread.sleep(1000) } catch (e: Exception) { break }; n++ }
       }
     }
     hb?.start()
